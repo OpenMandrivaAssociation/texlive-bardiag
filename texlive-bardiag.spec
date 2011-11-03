@@ -1,3 +1,9 @@
+# revision 22013
+# category Package
+# catalog-ctan /graphics/bardiag
+# catalog-date 2006-12-21 16:38:41 +0100
+# catalog-license lppl
+# catalog-version 0.4a
 Name:		texlive-bardiag
 Version:	0.4a
 Release:	1
@@ -93,6 +99,7 @@ inspired by and based on PSTricks.
 %doc %{_texmfdistdir}/doc/latex/bardiag/src/7.tex
 %doc %{_texmfdistdir}/doc/latex/bardiag/src/8.tex
 %doc %{_texmfdistdir}/doc/latex/bardiag/src/9.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -103,3 +110,5 @@ inspired by and based on PSTricks.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
