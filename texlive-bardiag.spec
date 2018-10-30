@@ -6,7 +6,7 @@
 # catalog-version 0.4a
 Name:		texlive-bardiag
 Version:	0.4a
-Release:	10
+Release:	11
 Summary:	LateX package for drawing bar diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/bardiag
