@@ -1,18 +1,12 @@
-# revision 22013
-# category Package
-# catalog-ctan /graphics/bardiag
-# catalog-date 2006-12-21 16:38:41 +0100
-# catalog-license lppl
-# catalog-version 0.4a
 Name:		texlive-bardiag
-Version:	0.4a
-Release:	11
+Version:	22013
+Release:	1
 Summary:	LateX package for drawing bar diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/bardiag
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bardiag.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bardiag.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bardiag.r22013.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bardiag.doc.r22013.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ diagrams possible and easy in LaTeX. The BarDiag package is
 inspired by and based on PSTricks.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -93,25 +87,10 @@ inspired by and based on PSTricks.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4a-2
-+ Revision: 749448
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.4a-1
-+ Revision: 717882
-- texlive-bardiag
-- texlive-bardiag
-- texlive-bardiag
-- texlive-bardiag
-- texlive-bardiag
-
