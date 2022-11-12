@@ -5,8 +5,8 @@ Summary:	LateX package for drawing bar diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/bardiag
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bardiag.r22013.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bardiag.doc.r22013.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bardiag.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bardiag.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
