@@ -1,6 +1,6 @@
 Name:		texlive-bardiag
 Version:	22013
-Release:	1
+Release:	2
 Summary:	LateX package for drawing bar diagrams
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/bardiag
